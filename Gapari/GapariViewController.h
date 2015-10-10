@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GapariViewController : UIViewController <UIWebViewDelegate>
+@interface GapariViewController : UIViewController <UIWebViewDelegate, UITextFieldDelegate>
 
 
 @end

@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //UIWebView
-    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 50)];
+    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 50)];
     self.webView.delegate = self;
     NSString *urlString = @"https://google.com";
     NSURL *url = [NSURL URLWithString:urlString];
@@ -33,21 +33,22 @@
     
     //Back Button
     self.bckButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [self.bckButton setFrame:CGRectMake(10, [UIScreen mainScreen].bounds.size.height - 50, 50, 50)];
+    [self.bckButton setFrame:CGRectMake(10, 10, 50, 50)];
     [self.bckButton setTitle:@"←" forState:UIControlStateNormal];
     [self.bckButton addTarget:self action:@selector(goBack:) forControlEvents:UIControlEventTouchUpInside];
     self.bckButton.titleLabel.font = [UIFont systemFontOfSize:30.0f];
     [self.view addSubview:self.bckButton];
     
     self.fwdButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [self.fwdButton setFrame:CGRectMake(60, [UIScreen mainScreen].bounds.size.height - 50, 50, 50)];
+    [self.fwdButton setFrame:CGRectMake(60, 10, 50, 50)];
     [self.fwdButton setTitle:@"→" forState:UIControlStateNormal];
     [self.fwdButton addTarget:self action:@selector(goForward:) forControlEvents:UIControlEventTouchUpInside];
     self.fwdButton.titleLabel.font = [UIFont systemFontOfSize:30.0f];
     [self.view addSubview:self.fwdButton];
     [self updateButtons];
     
-    self.searchBar = [[UITextField alloc] initWithFrame:CGRectMake(130, [UIScreen mainScreen].bounds.size.height - 50, [UIScreen mainScreen].bounds.size.width - 140, 50)];
+    self.searchBar = [[UITextField alloc] initWithFrame:CGRectMake(130, 10, [UIScreen mainScreen].bounds.size.width - 140, 50)];
+    self.searchBar.delegate = self;
     self.searchBar.placeholder = @"Insert text here";
     [self.view addSubview:self.searchBar];
     
@@ -56,6 +57,13 @@
     TFHpple *parser = [TFHpple hppleWithHTMLData:showListData];
     NSLog(@"%@", parser);
 
+}
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:textField.text]];
+    [self.webView loadRequest:urlRequest];
+    return YES;
 }
 
 - (void)updateButtons {
