@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A10E1561BC9A63300FC14D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A10E1551BC9A63300FC14D9 /* main.m */; };
 		3A10E1591BC9A63300FC14D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A10E1581BC9A63300FC14D9 /* AppDelegate.m */; };
-		3A10E15C1BC9A63300FC14D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A10E15B1BC9A63300FC14D9 /* ViewController.m */; };
+		3A10E15C1BC9A63300FC14D9 /* GapariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A10E15B1BC9A63300FC14D9 /* GapariViewController.m */; };
 		3A10E15F1BC9A63300FC14D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A10E15D1BC9A63300FC14D9 /* Main.storyboard */; };
 		3A10E1611BC9A63300FC14D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A10E1601BC9A63300FC14D9 /* Assets.xcassets */; };
 		3A10E1641BC9A63300FC14D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A10E1621BC9A63300FC14D9 /* LaunchScreen.storyboard */; };
@@ -20,8 +20,8 @@
 		3A10E1551BC9A63300FC14D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A10E1571BC9A63300FC14D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3A10E1581BC9A63300FC14D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3A10E15A1BC9A63300FC14D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3A10E15B1BC9A63300FC14D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3A10E15A1BC9A63300FC14D9 /* GapariViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GapariViewController.h; sourceTree = "<group>"; };
+		3A10E15B1BC9A63300FC14D9 /* GapariViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GapariViewController.m; sourceTree = "<group>"; };
 		3A10E15E1BC9A63300FC14D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A10E1601BC9A63300FC14D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A10E1631BC9A63300FC14D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,10 +58,10 @@
 		3A10E1531BC9A63300FC14D9 /* Gapari */ = {
 			isa = PBXGroup;
 			children = (
+				3A10E16C1BC9A6C200FC14D9 /* API */,
+				3A10E16B1BC9A6B400FC14D9 /* Views */,
 				3A10E1571BC9A63300FC14D9 /* AppDelegate.h */,
 				3A10E1581BC9A63300FC14D9 /* AppDelegate.m */,
-				3A10E15A1BC9A63300FC14D9 /* ViewController.h */,
-				3A10E15B1BC9A63300FC14D9 /* ViewController.m */,
 				3A10E15D1BC9A63300FC14D9 /* Main.storyboard */,
 				3A10E1601BC9A63300FC14D9 /* Assets.xcassets */,
 				3A10E1621BC9A63300FC14D9 /* LaunchScreen.storyboard */,
@@ -77,6 +77,22 @@
 				3A10E1551BC9A63300FC14D9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A10E16B1BC9A6B400FC14D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A10E15A1BC9A63300FC14D9 /* GapariViewController.h */,
+				3A10E15B1BC9A63300FC14D9 /* GapariViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3A10E16C1BC9A6C200FC14D9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A10E15C1BC9A63300FC14D9 /* ViewController.m in Sources */,
+				3A10E15C1BC9A63300FC14D9 /* GapariViewController.m in Sources */,
 				3A10E1591BC9A63300FC14D9 /* AppDelegate.m in Sources */,
 				3A10E1561BC9A63300FC14D9 /* main.m in Sources */,
 			);

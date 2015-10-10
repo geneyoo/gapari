@@ -6,13 +6,13 @@
 //  Copyright © 2015 gyst. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "GapariViewController.h"
 
-@interface ViewController ()
+@interface GapariViewController ()
 
 @end
 
-@implementation ViewController
+@implementation GapariViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
