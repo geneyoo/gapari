@@ -95,4 +95,8 @@
     [self updateButtons];
 }
 
+- (void)webView:(UIWebView * _Nonnull)webView didFailLoadWithError:(NSError * _Nullable)error {
+    NSLog(@"%@", error);
+}
+
 @end
