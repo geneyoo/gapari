@@ -56,7 +56,6 @@
     NSData *showListData = [NSData dataWithContentsOfURL:[NSURL URLWithString:showURL]];
     TFHpple *parser = [TFHpple hppleWithHTMLData:showListData];
     NSLog(@"%@", parser);
-
 }
 
 -(BOOL) textFieldShouldReturn:(UITextField *)textField{
