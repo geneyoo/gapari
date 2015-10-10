@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GapariViewController : UIViewController
+@interface GapariViewController : UIViewController <UIWebViewDelegate>
 
 
 @end

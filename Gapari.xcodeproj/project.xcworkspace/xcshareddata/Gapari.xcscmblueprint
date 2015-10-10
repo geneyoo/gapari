@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F8550E1EF4D5103C93CBBEADA20BAC6712730B38",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9F562CCDDF27E41F07D2FA4DB4040939E14E14D1" : 0,
+    "F8550E1EF4D5103C93CBBEADA20BAC6712730B38" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D53F6BB0-AEDF-4920-B7A5-AE18423DA49E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9F562CCDDF27E41F07D2FA4DB4040939E14E14D1" : "",
+    "F8550E1EF4D5103C93CBBEADA20BAC6712730B38" : "gapari\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Gapari",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Gapari.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:stheakanath\/Split.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9F562CCDDF27E41F07D2FA4DB4040939E14E14D1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:geneyoo\/gapari.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F8550E1EF4D5103C93CBBEADA20BAC6712730B38"
+    }
+  ]
+}

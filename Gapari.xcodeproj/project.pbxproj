@@ -13,6 +13,10 @@
 		3A10E15F1BC9A63300FC14D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A10E15D1BC9A63300FC14D9 /* Main.storyboard */; };
 		3A10E1611BC9A63300FC14D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A10E1601BC9A63300FC14D9 /* Assets.xcassets */; };
 		3A10E1641BC9A63300FC14D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A10E1621BC9A63300FC14D9 /* LaunchScreen.storyboard */; };
+		EBE141601BC9B052005776FE /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1415B1BC9B052005776FE /* TFHpple.m */; settings = {ASSET_TAGS = (); }; };
+		EBE141611BC9B052005776FE /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1415D1BC9B052005776FE /* TFHppleElement.m */; settings = {ASSET_TAGS = (); }; };
+		EBE141621BC9B052005776FE /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1415F1BC9B052005776FE /* XPathQuery.m */; settings = {ASSET_TAGS = (); }; };
+		EBE141641BC9B065005776FE /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE141631BC9B065005776FE /* libxml2.2.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		3A10E1601BC9A63300FC14D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A10E1631BC9A63300FC14D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A10E1651BC9A63300FC14D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE1415A1BC9B052005776FE /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		EBE1415B1BC9B052005776FE /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		EBE1415C1BC9B052005776FE /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		EBE1415D1BC9B052005776FE /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		EBE1415E1BC9B052005776FE /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		EBE1415F1BC9B052005776FE /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		EBE141631BC9B065005776FE /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE141641BC9B065005776FE /* libxml2.2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +54,7 @@
 		3A10E1481BC9A63300FC14D9 = {
 			isa = PBXGroup;
 			children = (
+				EBE141631BC9B065005776FE /* libxml2.2.tbd */,
 				3A10E1531BC9A63300FC14D9 /* Gapari */,
 				3A10E1521BC9A63300FC14D9 /* Products */,
 			);
@@ -91,6 +104,12 @@
 		3A10E16C1BC9A6C200FC14D9 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				EBE1415A1BC9B052005776FE /* TFHpple.h */,
+				EBE1415B1BC9B052005776FE /* TFHpple.m */,
+				EBE1415C1BC9B052005776FE /* TFHppleElement.h */,
+				EBE1415D1BC9B052005776FE /* TFHppleElement.m */,
+				EBE1415E1BC9B052005776FE /* XPathQuery.h */,
+				EBE1415F1BC9B052005776FE /* XPathQuery.m */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -168,6 +187,9 @@
 				3A10E15C1BC9A63300FC14D9 /* GapariViewController.m in Sources */,
 				3A10E1591BC9A63300FC14D9 /* AppDelegate.m in Sources */,
 				3A10E1561BC9A63300FC14D9 /* main.m in Sources */,
+				EBE141601BC9B052005776FE /* TFHpple.m in Sources */,
+				EBE141621BC9B052005776FE /* XPathQuery.m in Sources */,
+				EBE141611BC9B052005776FE /* TFHppleElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +299,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = Gapari/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = gyst.Gapari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -288,8 +312,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = Gapari/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = gyst.Gapari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -314,6 +340,7 @@
 				3A10E16A1BC9A63300FC14D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
