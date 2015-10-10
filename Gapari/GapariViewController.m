@@ -49,7 +49,7 @@
     
     self.searchBar = [[UITextField alloc] initWithFrame:CGRectMake(130, 10, [UIScreen mainScreen].bounds.size.width - 140, 50)];
     self.searchBar.delegate = self;
-    self.searchBar.placeholder = @"Insert text here";
+    self.searchBar.placeholder = @"Insert web address here";
     [self.view addSubview:self.searchBar];
     
     NSString *showURL = @"http://series-cravings.me/tv-show-1";
@@ -60,7 +60,13 @@
 
 -(BOOL) textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
-    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:textField.text]];
+    NSString *urlStr = textField.text;
+    if (![urlStr hasPrefix:@"http"]) {
+        urlStr = [NSString stringWithFormat:@"http://%@", urlStr];
+    }
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]];
+
+//    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:textField.text]];
     [self.webView loadRequest:urlRequest];
     return YES;
 }
